@@ -1,15 +1,15 @@
-public class Main {
+public class tempRecent {
 
     //one edge case left I guess
     // if the letter starts and doesn't end!
     public static void main(String[] args) {
-	// write your code here
-        String name = "abcabcabc";
+        // write your code here
+        String name = "bbbbb";
         System.out.println(Solution.lengthOfLongestSubstring(name));
     }
 }
 
-class Solution {
+class tempRecent2 {
     public static int counter = 0;
 
     public static int lengthOfLongestSubstring(String s) {
@@ -44,7 +44,7 @@ class Solution {
                 else if (noDuplicate[i] == noDuplicate[j]) {
                     highestWordCount = Math.max(highestWordCount,wordCount);
                     noRepetitionFlag = true;
-//                    i = j;
+                    i = j;
                     break;
                 }
                 else {
